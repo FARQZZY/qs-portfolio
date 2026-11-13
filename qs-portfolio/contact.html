@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Quantity Surveying Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">QS<span>Metrics</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">QS Projects</a></li>
+                    <li><a href="planner.html">Cost & Task Planner</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <h1>Get in Touch</h1>
+        <p class="section-intro">
+            Have an inquiry regarding quantity surveying, site supervision, or collaboration? Reach out directly or send a message below.<br>
+            <strong>Personal Email:</strong> oshundareolamide@gmail.com<br>
+            <strong>Student Portal / Org Email:</strong> o.faruq3609@miva.edu.ng
+        </p>
+
+        <section class="contact-wrapper card">
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name / Organization</label>
+                    <input type="text" id="fullName" name="fullName" value="Oshundare Faruq" placeholder="Enter your full name">
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" value="oshundareolamide@gmail.com" placeholder="oshundareolamide@gmail.com">
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Digits Only)</label>
+                    <input type="tel" id="phone" name="phone" value="2348146162015" placeholder="2348146162015">
+                    <small class="error-msg" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Project Scope / Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe your inquiry or message...">Hello, I would like to connect regarding quantity surveying and site supervision services.</textarea>
+                    <small class="error-msg" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                <div id="formSuccess" class="success-banner" hidden>
+                    Thank you! Your message has been validated and submitted successfully.
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oshundare Faruq (ID: 2025/C/DSC/0426) | Quantity Surveying Portfolio (COS 106 Project Miva Open University)</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
