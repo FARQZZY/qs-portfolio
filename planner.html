@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost & Task Planner | Quantity Surveying Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">QS<span>Metrics</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">QS Projects</a></li>
+                    <li><a href="planner.html" class="active">Cost & Task Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <h1>QS Project Milestone & Task Planner</h1>
+        <p class="section-intro">Track taking-off schedules, site supervision checkpoints, and project budgets with local storage.</p>
+
+        <section class="planner-box card">
+            <form id="taskForm" class="task-form">
+                <input type="text" id="taskInput" placeholder="e.g., Substructure Inspection at Monumental Stone" aria-label="QS Milestone description" required>
+                <select id="categorySelect" aria-label="QS Stage">
+                    <option value="Site Supervision">Site Supervision</option>
+                    <option value="BoQ / Take-Off">BoQ / Take-Off</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Web Development">Web Development</option>
+                </select>
+                <input type="number" id="costInput" placeholder="Est. Cost (₦)" min="0" step="1000" aria-label="Estimated cost in Naira">
+                <button type="submit" class="btn btn-primary">Add Milestone</button>
+            </form>
+
+            <div class="planner-stats">
+                <span id="totalTasks">Milestones: 0</span>
+                <span id="completedTasks">Completed: 0</span>
+                <span id="totalBudget">Total Est. Value: ₦0</span>
+            </div>
+
+            <ul id="taskList" class="task-list">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Oshundare Faruq (ID: 2025/C/DSC/0426) | Quantity Surveying Portfolio (COS 106 Project Miva Open University)</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
